@@ -1,0 +1,299 @@
+// 全局样式
+* {
+  margin: 0;
+  padding: 0;
+  font-family: '-apple-system', "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+// 自定义form，带有左侧小标签
+.module-item {
+  margin: 8px 8px;
+  .item-title {
+    height: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    padding-left: 5px;
+    font-size: 14px;
+    color: #353535;
+    text-align: left;
+    border-left: 3px solid #26a2ff;
+  }
+  .item-body {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+// 修改布局col的高度
+.van-col {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+// 设置图标选中的颜色，默认蓝色风格
+.check-iconfont {
+  color: #26a2ff;
+}
+.van-radio .van-icon-checked {
+  color: #26a2ff;
+}
+// popup的尺寸
+.van-popup--right {
+  height: 100%;
+  width: 100%;
+}
+// 是否有tab，针对form表单界面存在底部菜单
+.has-tab {
+  padding-bottom: 40px;
+}
+// tab的选中颜色
+.van-tab--active {
+  color: #26a2ff;
+}
+// tab的选中颜色的下划线
+.van-tabs__line {
+  background-color: #26a2ff;
+}
+// 自定义列表样式
+.lnk-list-page {
+  .lnk-list {
+    font-size: 14px;
+    padding: 6px 1% 6px 1.5%;
+    border-bottom: 5px solid #fafafa;
+    width: 97.5%;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    .list-left-col {
+      width: 94%;
+      float: left;
+      .lnk-row {
+        height: 27px;
+        line-height: 27px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .row-left-col-3 {
+          width: 30%;
+          float: left;
+        }
+        .row-left-col-5 {
+          width: 50%;
+          float: left;
+        }
+        .row-left-col-7 {
+          width: 70%;
+          float: left;
+        }
+        .row-right-col-3 {
+          width: 30%;
+          float: left;
+          text-align: right;
+        }
+        .row-right-col-5 {
+          width: 50%;
+          float: left;
+          text-align: right;
+        }
+        .row-right-col-7 {
+          width: 70%;
+          float: left;
+          text-align: right;
+        }
+      }
+    }
+    .list-right-col {
+      width: 6%;
+      float: left;
+      right: 5px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .no-more {
+    text-align: center;
+    margin-top: 3px;
+    color: #26a2ff;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+// 自定义地址列表样式
+.address-list {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px;
+  .address-item {
+    background: rgb(250,250,250);;
+    margin-top: 8px;
+    padding: 5px;
+    .icon {
+      color: #26a2ff;
+      font-size: 18px;
+    }
+    .info-row {
+      height: 26px;
+      line-height: 26px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      .left-col-3 {
+        width: 30%;
+        float: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .left-col-5 {
+        width: 50%;
+        float: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .left-col-7 {
+        width: 70%;
+        float: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .right-col-3 {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      .right-col-5 {
+        width: 50%;
+        float: left;
+        text-align: right;
+      }
+      .right-col-7 {
+        width: 70%;
+        float: left;
+        text-align: right;
+      }
+    }
+    .action-row {
+      height: 25px;
+      line-height: 20px;
+      padding-top: 5px;
+      color: #787878;
+      border-top: 1px solid #f3f3f3;
+      .left-col-3 {
+        width: 30%;
+        float: left;
+      }
+      .left-col-5 {
+        width: 50%;
+        float: left;
+      }
+      .left-col-7 {
+        width: 70%;
+        float: left;
+      }
+      .right-col-3 {
+        width: 30%;
+        float: right;
+      }
+      .right-col-5 {
+        width: 50%;
+        float: right;
+      }
+      .right-col-7 {
+        width: 70%;
+        float: right;
+      }
+      .button {
+        margin-left: 20px;
+        float: right;
+      }
+      .label {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+// 悬浮button
+.float-button {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 40px;
+  background: #26a2ff;
+  line-height: 50px;
+  text-align: center;
+}
+// 自定义field
+.lnk-field {
+  padding-left: 10px;
+  height: 44px;
+  .van-radio {
+    height: 30px;
+    border-bottom: 1px solid #f3f3f3;
+    padding-top: 10px;
+    margin-left: 10px;
+  }
+  .lnk-row {
+    display: -webkit-box;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 24px;
+    position: relative;
+    color: #333;
+    font-size: 14px;
+    overflow: hidden;
+    border-bottom: 1px solid #f3f3f3;
+    .lnk-col-label {
+      width: 100%;
+      max-width: 90px;
+      line-height: 24px;
+      height: 24px;
+    }
+    .lnk-col-content {
+      width: 100%;
+      height: 24px;
+      line-height: 24px;
+      .gray {
+        color: initial;
+      }
+      .input {
+        border: 0;
+        padding: 0;
+        display: block;
+        width: 100%;
+        resize: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+// 自定义field组件的必输标识
+.require-icon{
+  max-width: 10px;
+  float: left;
+  line-height: 44px;
+  color: red;
+}
+// 单元格
+.van-cell {
+  padding: 10px 10px;
+}
+// 单元格 left color
+.van-cell__left-icon {
+  color: red;
+}
+// card组件的价格颜色
+.van-card__price {
+  color: red;
+}
+// card组件图片左侧距离
+.van-card__thumb {
+  left: 5px;
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qBAAqB;AAYrB,oBAAoB;AAMpB,YAAY",
+"sources": ["vant.var.scss"],
+"names": [],
+"file": "vant.var.css"
+}
