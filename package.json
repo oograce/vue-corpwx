@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "ajv": "^6.5.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "fastclick": "^1.0.6",
     "node-sass": "^4.9.0",
     "postcss-theme-variables": "^1.0.0",
